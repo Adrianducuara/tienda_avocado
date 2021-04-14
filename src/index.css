@@ -1,0 +1,142 @@
+/* 
+Author: AdrianDucuara
+Modify: 2021/04/14
+*/
+:root {
+    --black-letter: rgba(0,0,0,.95);
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: #4183c4;
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    min-width: 320px;
+    height: 80px;
+    padding: 20px;
+    border: 1px solid rgba(34,36,38,.15);
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    border-radius: 3px;
+}
+.header img {
+    width: 35px;
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.header ul li {
+    display: flex;
+}
+.header ul li div:last-child {
+    line-height: 40px;
+}
+.header a {
+    font-size: 1.6rem;
+    margin-left: 8px;
+    color: var(--black-letter)
+}
+.container {
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+.container h1 {
+    font-size: 3.0rem;
+    margin-bottom: 30px;
+}
+.container h1 > img {
+    width: 55px;
+}
+.container > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.container-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.target {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 344px;
+    max-width: 344px;
+    height: 350px;
+    border: 1px solid rgb(34 36 38 / 15%);
+    margin: 20px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+.target img {
+    align-self: center;
+    margin-bottom: 70px;
+}
+.target-footer {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    border-top: 1px solid rgba(34,36,38,.15);
+    padding: 15px;
+}
+.target-footer h3,
+.target-footer small {
+    font-size: 1.6rem;
+}
+.target:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    cursor: pointer;
+}
+footer {
+    border-top: 1px solid rgb(34 36 38 / 15%);
+    padding: 50px 10px 50px 10px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+}
+footer ul div {
+    margin-bottom: 20px;
+}
+footer ul li:last-child img{
+    width: 20px;
+}
+footer small {
+    color: gray;
+}
+@media (min-width: 768px) {
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        align-items: center;
+    }
+}
+
+footer ul li div {
+   text-align: left;
+   margin-right: 50px;
+}
