@@ -72,6 +72,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 .target {
     position: relative;
@@ -87,6 +88,7 @@ a {
     transition: all 0.4s ease;
 }
 .target img {
+    width: 80%;
     align-self: center;
     margin-bottom: 70px;
 }
